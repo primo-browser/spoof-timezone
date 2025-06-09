@@ -1,9 +1,13 @@
 {
   "manifest_version": 3,
   "version": "0.4.4",
-  "name": "Spoof Timezone",
-  "description": "Change the time zone setting for web pages in the browser to a randomly selected or user-specified time zone.",
-  "homepage_url": "https://webextension.org/listing/spoof-timezone.html",
+  "version_name": "0.1.0",
+  "name": "Timezone Spoofer",
+  "short_name": "Timezone Spoofer",
+  "description": "Change the timezone setting for web pages to an IP based or user-specified timezone.",
+  "author": "PrimoBrowser, LLC.",
+  "offline_enabled": true,
+  "minimum_chrome_version": "122",
   "permissions": [
     "storage",
     "scripting",
@@ -33,16 +37,10 @@
   },
   "background": {
     "service_worker": "worker.js",
-    "scripts": ["/data/offsets.js", "worker.js"]
   },
   "options_ui": {
     "page": "/data/options/index.html",
     "open_in_tab": true
   },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "{55f61747-c3d3-4425-97f9-dfc19a0be23c}",
-      "strict_min_version": "128.0"
-    }
-  }
+  "update_url" : "https://storage.googleapis.com/primobrowser-extensions/updates.xml",
 }
