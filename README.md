@@ -1,8 +1,6 @@
-# Spoof Timezone
+# Timezone Spoofer
 
-Alters browser timezone to a random or user-defined value.
+Extension which alters the browser timezone reported by JS APIS to an IP based or user-defined value.
 
-
-How to report a bug:
-  * For general question please use the review section of the [FAQs page](https://webextension.org/listing/spoof-timezone.html)
-  * For technical question please open a new bug report here
+It is a fork of https://github.com/joue-quroi/spoof-timezone for which the source code is in the "old" directory.
+This fork maintains the same license, but has branding and JS changes to tailor it for inlcusion in PrimoBrowser.
